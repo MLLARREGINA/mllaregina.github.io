@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="2;url=https://tusitio.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redireccionando...</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .fondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .mensaje {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      font-size: 2rem;
+      background-color: rgba(0, 0, 0, 0.5); /* opcional para dar contraste */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video de fondo (también podés usar una imagen en lugar del video) -->
+  <video autoplay muted loop class="fondo">
+    <source src="tu-video.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+
+  <!-- Mensaje -->
+  <div class="mensaje">
+    Estamos redireccionando... por favor espera.
+  </div>
+
+  <script>
+    setTimeout(function() {
+      window.location.href = "https://millonarios.top";
+    }, 2000); // 2000 milisegundos = 2 segundos
+  </script>
+</body>
+</html>
